@@ -1,0 +1,20 @@
+{
+  "testServer": "1112701047362834473",
+  "clientId": "1114461237561020466",
+  "devs": ["414497135434661888"],
+  "commands": {
+    "Misc": {
+      "kein Befehl vorhanden": "...."
+    },
+    "Moderation": {
+      "/ban": "Bannt ein Mitglied!",
+      "/unban": "Entbannt ein Mitglied!",
+      "/kick": "Kicke ein Mitglied!",
+      "/say": "Verschicke eine Embed Nachricht",
+      "/clear" : "Lösche eine Anzahl von Nachricht aus dem Verlauf"
+    },
+    "Utility": {
+      "help": "Wiedergabe aller Befehle mit Beschreibung"
+    }
+  }
+}
