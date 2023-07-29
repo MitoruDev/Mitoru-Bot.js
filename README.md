@@ -1,6 +1,6 @@
 # Discord.js Bot mit SQLite-Datenbank
 
-![Bot Banner](https://media.discordapp.net/attachments/558723762191859712/1134796345820057680/Mitoru-Portfolio.png?width=705&height=352)
+![Bot Banner](https://media.discordapp.net/attachments/558723762191859712/1134796345543237715/Mitoru-Bot.js.png?width=705&height=352)
 
 Willkommen zu meinem Discord.js-Bot! Dieser Bot wurde mit Discord.js und einer SQLite-Datenbank entwickelt und bietet eine Vielzahl von Funktionen für deinen Server.
 
