@@ -1,25 +1,28 @@
 const config = require("../../../config.json");
 
 module.exports = async (client) => {
-    const channelId = "1112701048763727923"; // ID des Channels, in dem der Member Count angezeigt werden soll
-  
-    const updateMemberCount = async (guild) => {
+  const memberCountChannelId = "1112701048763727923"; // ID des Kanals, in dem die Mitgliederzahl angezeigt werden soll
+  const botCountChannelId = "1112701048763727924"; // ID des Kanals, in dem die Bot-Anzahl angezeigt werden soll
+
+  const updateMemberCount = (guild) => {
+    const memberCountChannel = guild.channels.cache.get(memberCountChannelId);
+    const botCountChannel = guild.channels.cache.get(botCountChannelId);
+    
+    if (memberCountChannel && botCountChannel) {
       const memberCount = guild.memberCount;
-      const channel = guild.channels.cache.get(channelId);
+      const botCount = guild.members.cache.filter(member => member.user.bot).size;
       
-      if (!channel || channel.type !== 'text') return;
-  
-      channel.setName(`⭐｜Members: ${memberCount}`);
-    };
-  
-    client.on('guildMemberAdd', async (member) => {
-      const guild = member.guild;
-      await updateMemberCount(guild);
-    });
-  
-    client.on('guildMemberRemove', async (member) => {
-      const guild = member.guild;
-      await updateMemberCount(guild);
-    });
+      memberCountChannel.setName(`⭐｜Mitglieder: ${memberCount}`);
+      botCountChannel.setName(`🤖｜Bots: ${botCount}`);
+    }
   };
-  
+
+  client.on("guildMemberAdd", (member) => {
+    updateMemberCount(member.guild);
+  });
+
+  client.on("guildMemberRemove", (member) => {
+    updateMemberCount(member.guild);
+    
+  });
+};

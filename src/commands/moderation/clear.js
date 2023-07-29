@@ -41,6 +41,12 @@ module.exports = {
         ephemeral: true,
       });
       return;
+    } else if (count > 100) {
+      await interaction.reply({
+        content: "Die Anzahl der zu löschenden Nachrichten darf nicht größer als 100 sein.",
+        ephemeral: true,
+      });
+      return;
     }
 
     const messages = await interaction.channel.messages.fetch({ limit: count});

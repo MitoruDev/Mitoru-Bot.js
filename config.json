@@ -2,19 +2,37 @@
   "testServer": "1112701047362834473",
   "clientId": "1114461237561020466",
   "devs": ["414497135434661888"],
+  "modRoles": ["1112701047429943429", "1112701047429943430", "1112701047429943431", "1112701047429943432", "1112701047429943433", "1112701047429943434"],
+  "memberchannel" : "1112701048763727923",
   "commands": {
-    "Misc": {
+    "Misc  👥": {
       "kein Befehl vorhanden": "...."
     },
-    "Moderation": {
+    "Moderation  🛡": {
       "/ban": "Bannt ein Mitglied!",
       "/unban": "Entbannt ein Mitglied!",
       "/kick": "Kicke ein Mitglied!",
-      "/say": "Verschicke eine Embed Nachricht",
-      "/clear" : "Lösche eine Anzahl von Nachricht aus dem Verlauf"
+      "/clear" : "Lösche eine Anzahl von Nachrichten aus dem Verlauf!",
+      "/say": "Verschicke eine Embed Nachricht!"
     },
-    "Utility": {
-      "help": "Wiedergabe aller Befehle mit Beschreibung"
+    "Setup  🛠": {
+      "/setup-actionrow": "Verschicke eine Action-Row, welche aus Buttons besteht.",
+      "/setup-embedrow": "Verschicke eine Embed Nachricht, welche eine Action-Row enthält.",
+      "/setup-ticketsystem": "Erstellt eine Ticket-System, um Tickets zu bearbeiten.",
+      "/setup-vote": "Erstellt eine Umfrage, welche versendet wird."
+    },
+    "Ticket-System 🎫": {
+      "/close-ticket": "Versendet eine Ticket-Close Bestätigungsnachricht."
+    },
+    "Vote-System 📥": {   
+      "/close-vote": "Erstelle eine Umfrage, welche versendet wird."
+    },
+    "Level-Systen 🥇": {
+      "/reset-xp": "Setzt die XP sowie das Level eines Nutzers zurück.",
+      "/set-xp": "Überschreibt die XP für einen Nutzer."
+    },
+    "Utility  🌀": {
+      "help": "Wiedergabe aller Befehle mit Beschreibung."
     }
   }
 }

@@ -5,8 +5,8 @@ module.exports = {
   deleted: false,
   name: "help",
   description: "Zeigt eine Liste der verfügbaren Befehle an.",
-  devOnly: true,
-
+  // devOnly: Boolean,
+  // testOnly: Boolean,
 
   callback: async (client, interaction) => {
     
