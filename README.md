@@ -40,10 +40,10 @@ npm install
 }
 ```
 
-##Mitwirken
+## Mitwirken
 Ich freue mich über Beiträge und Verbesserungsvorschläge! Wenn du einen Fehler gefunden hast oder eine neue Funktion hinzufügen möchtest, kannst du gerne einen Pull Request erstellen oder ein Issue öffnen.
 
-##Lizenz
+## Lizenz
 Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen findest du in der Lizenzdatei.
 
 
